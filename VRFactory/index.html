@@ -1,0 +1,51 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-07-07 17:50:44
+ * @LastEditTime: 2021-07-08 09:49:22
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \BSshow\dist\index.html
+-->
+
+<!doctype html>
+<html>
+
+<head>
+    <title>《智慧研究所》</title>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/YS.css">
+
+</head>
+
+<body>
+    <video id="video" loop crossOrigin="anonymous" playsinline style="display:none">
+        <!-- <source src="textures/sintel.ogv" type='video/ogg; codecs="theora, vorbis"'> -->
+        <source src="./src/resources/video/fuchouzhe.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+    </video>
+
+    <div id="camerapos">
+        <button id="Nowcameraposition" type="button">宣传片播放/暂停</button>
+
+        <button id="controlplane" type="button">VR控制台漫游</button>
+
+        <button id="disintegrate" type="button">设备分离/重组</button>
+
+        <button id="danger" type="button">预警系统</button>
+
+        <button id="Door" type="button">开门关门</button>
+        <button id="kk1" type="button">设备运行启动/停止</button>
+        <button id="kk2" type="button">屋顶消失（辅助）</button>
+
+    </div>
+
+    <div id="webgl"> </div>
+    <script src="./bundle.js"></script>
+
+
+
+</body>
+
+
+</html>
