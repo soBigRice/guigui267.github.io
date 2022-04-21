@@ -5,11 +5,11 @@ const CopyPlugin = require("copy-webpack-plugin");
 const proxyUrl = "./Projects/VRScene"; //代理项目地址
 
 module.exports = {
-  mode: "development", //production
+  mode: "production", //production//development
   entry: `${proxyUrl}/index.js`,
   output: {
     clean: true,
-    path: path.resolve(__dirname, "demo"),
+    path: path.resolve(__dirname, "demo"), //将项目打包到demo的目录下面更新
     filename: "[name].js",
   },
   resolve: {
@@ -34,7 +34,7 @@ module.exports = {
       },
     ],
   },
-  devtool: "source-map",
+  devtool: "hidden-cheap-source-map", //hidden-cheap-source-map//source-map
   devServer: {
     static: {
       directory: path.join(__dirname, "resources"),
